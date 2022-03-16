@@ -7,7 +7,7 @@ class LogoAppbar extends AppBar {
     required Expanded flexibleSpace,
   }) : super(
           key: key,
-          backgroundColor: Color.fromARGB(255, 48, 45, 47),
+          backgroundColor: const Color.fromARGB(255, 48, 45, 47),
           elevation: elevation,
           centerTitle: true,
           title: Image.asset(

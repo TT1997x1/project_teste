@@ -67,6 +67,10 @@ flutter:
       - assets/images/Banner3.jpg
       - assets/images/logo1.png
       - assets/images/logo_barracred.svg  
+      - assets/images/adesao_01.jpg
+      - assets/images/adesao_02.jpg
+      - assets/images/adesao_03.jpg
+
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_intro3/routes/documentos_autonomo_route.dart';
+import 'package:flutter_application_intro3/routes/documentos_liberal_route.dart';
+import 'package:flutter_application_intro3/routes/documentos_route.dart';
+import 'package:flutter_application_intro3/routes/perfil_parceiro_route.dart';
 import 'package:flutter_application_intro3/routes/splash_routes.dart';
 import 'package:get/get.dart';
 
@@ -12,7 +16,13 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Teste',
       theme: ThemeData(),
-      getPages: [...SplashRouters.routers],
+      getPages: [
+        ...SplashRouters.routers,
+        ...documentos_cnpj_Routers.routers,
+        ...ParceiroRouters.routers,
+        ...liberal_Routers.routers,
+        ...autonomo_Routers.routers
+      ],
       debugShowCheckedModeBanner: false,
     );
   }

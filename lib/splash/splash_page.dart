@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_intro3/share/svg.dart';
 import 'package:flutter_application_intro3/widget/btn_button.dart';
 import 'package:flutter_application_intro3/widget/btn_corfonte.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:intro_slider/intro_slider.dart';
 import 'package:intro_slider/slide_object.dart';
@@ -98,82 +97,80 @@ class IntroScreenState extends State<IntroScreen> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: PreferredSize(
-            preferredSize: const Size.fromHeight(90.0),
-            child: AppBar(
-              elevation: 0,
-              //toolbarHeight: 100,
-              title: pngLogo_b,
-              backgroundColor: const Color.fromARGB(255, 48, 45, 47),
-              centerTitle: true,
-              flexibleSpace: Expanded(
-                child: Container(
-                  alignment: Alignment.center,
-                  /*decoration: const BoxDecoration(
+      home: Scaffold(appBar: _buildAppBar(), body: _buildBody()),
+    );
+  }
+
+  PreferredSizeWidget _buildAppBar() {
+    return PreferredSize(
+        preferredSize: const Size.fromHeight(90.0),
+        child: AppBar(
+          elevation: 1,
+          toolbarOpacity: 0.1,
+          //toolbarHeight: 100,
+          title: pngLogo_b,
+          backgroundColor: const Color.fromARGB(255, 41, 41, 41),
+          centerTitle: true,
+          flexibleSpace: Expanded(
+            child: Container(
+                alignment: Alignment.center,
+                /*decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage("assets/image/logo1.png"),
                   
                 ),
               ),*/
-                  child: Expanded(
-                    child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.end,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.all(0.0),
-                            child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  const SizedBox(
-                                    height: 580,
-                                  ),
-                                  Center(
-                                    child: BtnCor(
-                                      color: bcPrimaryColor,
-                                      label: 'SEJA NOSSO PARCEIRO',
-                                      onPressed: () {},
-                                    ),
-                                  ),
-                                  const SizedBox(
-                                    height: 20,
-                                  ),
-                                  Center(
-                                    child: Button(
-                                      color: bcLineColor,
-                                      label: 'JÁ SOU PARCEIRO',
-                                      onPressed: () {},
-                                    ),
-                                  ),
-                                  const SizedBox(
-                                    height: 60,
-                                  ),
-                                  Text(
-                                      'Telefone: 0800 771 0020 \n \n E-mail: barracred@barracred.com.br',
-                                      style: context.textTheme.headline6
-                                          ?.copyWith(
-                                              fontWeight: FontWeight.normal,
-                                              fontSize: 9,
-                                              color: const Color.fromARGB(
-                                                  255, 255, 255, 255))),
-                                ]),
-                          ),
-                        ]),
-                  ),
-                ),
-              ),
-            )),
-        body: IntroSlider(
-          slides: slides,
-          renderSkipBtn: renderSkipBtn(),
-          onSkipPress: onSkipPress,
-          onDonePress: onDonePress,
-          renderDoneBtn: renderDoneBtn(),
-          renderNextBtn: renderNextBtn(),
-          sizeDot: 0.0,
-          colorActiveDot: Colors.white,
-        ),
-      ),
-    );
+                child: const Text('teste')),
+          ),
+        ));
+  }
+
+  Widget _buildBody() {
+    return Container(
+        alignment: Alignment.center,
+        decoration: const BoxDecoration(color: Color.fromARGB(255, 34, 32, 34)),
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          Expanded(
+              child: IntroSlider(
+            slides: slides,
+            renderSkipBtn: renderSkipBtn(),
+            onSkipPress: onSkipPress,
+            onDonePress: onDonePress,
+            renderDoneBtn: renderDoneBtn(),
+            renderNextBtn: renderNextBtn(),
+            sizeDot: 0.0,
+            colorActiveDot: Colors.white,
+          )),
+          const SizedBox(
+            height: 20,
+          ),
+          BtnCor(
+            color: bcPrimaryColor,
+            label: 'SEJA NOSSO PARCEIRO',
+            onPressed: () {
+              Get.toNamed('/perfil');
+            },
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          Button(
+            color: bcLineColor,
+            label: 'JÁ SOU PARCEIRO',
+            onPressed: () {},
+          ),
+          const SizedBox(
+            height: 16,
+          ),
+          Text(
+              'Telefone: 0800 771 0020 \n \n E-mail: barracred@barracred.com.br',
+              style: context.textTheme.headline6?.copyWith(
+                  fontWeight: FontWeight.normal,
+                  fontSize: 9,
+                  color: const Color.fromARGB(255, 255, 255, 255))),
+          const SizedBox(
+            height: 16,
+          ),
+        ]));
   }
 }
