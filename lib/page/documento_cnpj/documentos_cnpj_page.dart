@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_intro3/share/svg.dart';
 import 'package:flutter_application_intro3/theme/colors.dart';
 import 'package:flutter_application_intro3/widget/btn_corfonte.dart';
 import 'package:get/get.dart';
@@ -42,7 +43,7 @@ class documentosPage extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Image.asset('assets/images/logo1.png'),
+                        svgInformativo,
                       ],
                     ),
                   ),

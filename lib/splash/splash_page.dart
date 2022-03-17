@@ -144,20 +144,26 @@ class IntroScreenState extends State<IntroScreen> {
           const SizedBox(
             height: 20,
           ),
-          BtnCor(
-            color: bcPrimaryColor,
-            label: 'SEJA NOSSO PARCEIRO',
-            onPressed: () {
-              Get.toNamed('/perfil');
-            },
+          Padding(
+            padding: const EdgeInsets.all(10),
+            child: BtnCor(
+              color: bcPrimaryColor,
+              label: 'SEJA NOSSO PARCEIRO',
+              onPressed: () {
+                Get.toNamed('/perfil');
+              },
+            ),
           ),
           const SizedBox(
-            height: 20,
+            height: 5,
           ),
-          Button(
-            color: bcLineColor,
-            label: 'JÁ SOU PARCEIRO',
-            onPressed: () {},
+          Padding(
+            padding: const EdgeInsets.all(10),
+            child: Button(
+              color: bcLineColor,
+              label: 'JÁ SOU PARCEIRO',
+              onPressed: () {},
+            ),
           ),
           const SizedBox(
             height: 16,

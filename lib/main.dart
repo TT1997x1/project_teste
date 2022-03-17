@@ -3,6 +3,7 @@ import 'package:flutter_application_intro3/routes/documentos_autonomo_route.dart
 import 'package:flutter_application_intro3/routes/documentos_liberal_route.dart';
 import 'package:flutter_application_intro3/routes/documentos_route.dart';
 import 'package:flutter_application_intro3/routes/perfil_parceiro_route.dart';
+import 'package:flutter_application_intro3/routes/questionario_route.dart';
 import 'package:flutter_application_intro3/routes/splash_routes.dart';
 import 'package:get/get.dart';
 
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
       title: 'Teste',
       theme: ThemeData(),
       getPages: [
+        ...QuestionatioRouters.routers,
         ...SplashRouters.routers,
         ...documentos_cnpj_Routers.routers,
         ...ParceiroRouters.routers,

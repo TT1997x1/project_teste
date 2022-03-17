@@ -30,6 +30,7 @@ dependencies:
   flutter:
     sdk: flutter
   get: ^4.6.1
+  group_button: ^4.6.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -70,6 +71,7 @@ flutter:
       - assets/images/adesao_01.jpg
       - assets/images/adesao_02.jpg
       - assets/images/adesao_03.jpg
+      - assets/images/img_informativo.svg
 
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg

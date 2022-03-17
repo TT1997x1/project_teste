@@ -24,3 +24,5 @@ final Widget svgVoltar = SvgPicture.asset(
   'assets/images/icon_voltar.svg',
   width: 20,
 );
+final Widget svgInformativo =
+    SvgPicture.asset('assets/images/img_informativo.svg', width: 360);
