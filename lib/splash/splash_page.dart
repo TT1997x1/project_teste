@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_intro3/share/svg.dart';
 import 'package:flutter_application_intro3/widget/btn_button.dart';
 import 'package:flutter_application_intro3/widget/btn_corfonte.dart';
+import 'package:flutter_application_intro3/widget/button_d.dart';
 import 'package:get/get.dart';
 import 'package:intro_slider/intro_slider.dart';
 import 'package:intro_slider/slide_object.dart';
@@ -108,7 +109,7 @@ class IntroScreenState extends State<IntroScreen> {
           elevation: 1,
           toolbarOpacity: 0.1,
           //toolbarHeight: 100,
-          title: pngLogo_b,
+          title: pngLogob,
           backgroundColor: const Color.fromARGB(255, 41, 41, 41),
           centerTitle: true,
           flexibleSpace: Expanded(
@@ -160,7 +161,7 @@ class IntroScreenState extends State<IntroScreen> {
           Padding(
             padding: const EdgeInsets.all(10),
             child: Button(
-              color: bcLineColor,
+              color: bcLineColor_c1,
               label: 'JÁ SOU PARCEIRO',
               onPressed: () {},
             ),
@@ -177,6 +178,7 @@ class IntroScreenState extends State<IntroScreen> {
           const SizedBox(
             height: 16,
           ),
+          // const ButtonPage(textButton: 'Continuar'),
         ]));
   }
 }

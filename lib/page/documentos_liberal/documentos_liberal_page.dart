@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_intro3/share/svg.dart';
-import 'package:flutter_application_intro3/theme/colors.dart';
-import 'package:flutter_application_intro3/widget/btn_corfonte.dart';
+import 'package:flutter_application_intro3/widget/button_d.dart';
 import 'package:get/get.dart';
 
-void main() => runApp(const documentos_liberal_Page());
+void main() => runApp(const DocumentosLiberalPage());
 
-// ignore: camel_case_types
-class documentos_liberal_Page extends StatelessWidget {
-  const documentos_liberal_Page({Key? key}) : super(key: key);
+class DocumentosLiberalPage extends StatelessWidget {
+  const DocumentosLiberalPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -133,19 +131,11 @@ class documentos_liberal_Page extends StatelessWidget {
                     const SizedBox(
                       height: 30,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(20),
-                      child: BtnCor(
-                        color: bcPrimaryColor,
-                        label: 'Continuar',
-                        onPressed: () {
-                          Get.toNamed('/questionario');
-                        },
-                      ),
-                    ),
                   ],
                 ),
               ]),
+              const ButtonPage(
+                  textButton: 'Continuar', caminho: '/questionario'),
             ],
           ),
         ),

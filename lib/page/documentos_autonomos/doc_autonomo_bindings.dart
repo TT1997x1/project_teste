@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-class documentos_autonomo_Bindings implements Bindings {
+class DocumentosAutonomoBindings implements Bindings {
   @override
   void dependencies() {}
 }

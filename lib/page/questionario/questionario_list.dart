@@ -28,22 +28,21 @@ class QuestionarioList extends StatelessWidget {
               ),
               GroupButton(
                 isRadio: true,
-                spacing: 5,
+                // ignore: deprecated_member_use
+                spacing: 8,
+                // ignore: deprecated_member_use
                 buttonHeight: 30,
+                // ignore: deprecated_member_use
                 buttonWidth: 115,
+                // ignore: deprecated_member_use
                 borderRadius: BorderRadius.circular(30),
-                unselectedColor: Color.fromARGB(255, 247, 250, 247),
-                selectedColor: Color.fromARGB(255, 92, 186, 81),
-                unselectedBorderColor: Colors.grey[500],
-                selectedShadow: const <BoxShadow>[
-                  BoxShadow(color: Color.fromARGB(0, 166, 177, 19))
-                ],
-                unselectedShadow: const <BoxShadow>[
-                  BoxShadow(color: Color.fromARGB(0, 0, 0, 0))
-                ],
+                // ignore: deprecated_member_use
+                unselectedColor: const Color.fromARGB(255, 247, 250, 247),
+                // ignore: deprecated_member_use
+                selectedColor: const Color.fromARGB(255, 92, 186, 81),
                 onSelected: (index, isSelected) =>
-                    print('$index button is selected'),
-                buttons: ["01", "13", "30"],
+                    ('$index button is selected'),
+                buttons: const ["01", "13", "07"],
               )
             ],
           );

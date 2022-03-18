@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-class DocumentosCnpjBindings implements Bindings {
+class CartBancoBindings implements Bindings {
   @override
   void dependencies() {}
 }

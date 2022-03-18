@@ -1,18 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_intro3/share/svg.dart';
-import 'package:flutter_application_intro3/theme/colors.dart';
-import 'package:flutter_application_intro3/widget/btn_corfonte.dart';
+import 'package:flutter_application_intro3/widget/button_d.dart';
 import 'package:get/get.dart';
 
-void main() => runApp(const documentosPage());
+void main() => runApp(const DocumentosCnpjPage());
 
-class documentosPage extends StatelessWidget {
-  const documentosPage({Key? key}) : super(key: key);
+class DocumentosCnpjPage extends StatelessWidget {
+  const DocumentosCnpjPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    const title = 'Documentos';
-
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
@@ -151,17 +148,13 @@ class documentosPage extends StatelessWidget {
                     const SizedBox(
                       height: 20,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(20),
-                      child: BtnCor(
-                        color: bcPrimaryColor,
-                        label: 'Continuar',
-                        onPressed: () {},
-                      ),
-                    ),
                   ],
                 ),
               ]),
+              const ButtonPage(
+                textButton: 'Continuar',
+                caminho: '/infosocial',
+              ),
             ],
           ),
         ),

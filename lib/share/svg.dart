@@ -6,11 +6,11 @@ final Widget svgLogo = SvgPicture.asset(
   'assets/images/logo_barracred.svg',
   width: 25,
 );
-final Widget svgLogo_b = SvgPicture.asset(
+final Widget svgLogob = SvgPicture.asset(
   'assets/images/logo_barracred_b.svg',
   width: 150,
 );
-final pngLogo_b = Image.asset(
+final pngLogob = Image.asset(
   'assets/images/logo1.png',
   //width: 100,
   height: 50,

@@ -3,10 +3,10 @@ import 'package:flutter_application_intro3/theme/colors.dart';
 import 'package:flutter_application_intro3/widget/btn_corfonte.dart';
 import 'package:get/get.dart';
 
-void main() => runApp(const parceiroPage());
+void main() => runApp(const ParceiroPage());
 
-class parceiroPage extends StatelessWidget {
-  const parceiroPage({Key? key}) : super(key: key);
+class ParceiroPage extends StatelessWidget {
+  const ParceiroPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

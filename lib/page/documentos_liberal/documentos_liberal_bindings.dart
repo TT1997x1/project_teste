@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-class liberal_Bindings implements Bindings {
+class LiberalBindings implements Bindings {
   @override
   void dependencies() {}
 }

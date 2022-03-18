@@ -9,7 +9,7 @@ class QuestionatioRouters {
     GetPage(
       name: '/questionario',
       binding: QuestionarioBindings(),
-      page: () => QuestionarioPage(),
+      page: () => const QuestionarioPage(),
     )
   ];
 }
