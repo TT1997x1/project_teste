@@ -50,7 +50,7 @@ class TextTittle2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      padding: const EdgeInsets.only(left: 100, right: 100, top: 10),
       child: Column(
         children: [
           const SizedBox(height: 10),
@@ -58,7 +58,7 @@ class TextTittle2 extends StatelessWidget {
             children: [
               Text(
                 textTittle!,
-                textAlign: TextAlign.justify,
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   color: textColor,
                   fontSize: 12,

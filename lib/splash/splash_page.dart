@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_intro3/share/svg.dart';
 import 'package:flutter_application_intro3/widget/btn_button.dart';
 import 'package:flutter_application_intro3/widget/btn_corfonte.dart';
-import 'package:flutter_application_intro3/widget/button_d.dart';
 import 'package:get/get.dart';
 import 'package:intro_slider/intro_slider.dart';
 import 'package:intro_slider/slide_object.dart';
@@ -110,7 +109,7 @@ class IntroScreenState extends State<IntroScreen> {
           toolbarOpacity: 0.1,
           //toolbarHeight: 100,
           title: pngLogob,
-          backgroundColor: const Color.fromARGB(255, 41, 41, 41),
+          backgroundColor: Color.fromARGB(255, 44, 44, 44),
           centerTitle: true,
           flexibleSpace: Expanded(
             child: Container(
@@ -146,12 +145,13 @@ class IntroScreenState extends State<IntroScreen> {
             height: 20,
           ),
           Padding(
-            padding: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(20),
             child: BtnCor(
               color: bcPrimaryColor,
               label: 'SEJA NOSSO PARCEIRO',
               onPressed: () {
                 Get.toNamed('/perfil');
+                // Get.toNamed('/repre');
               },
             ),
           ),
@@ -159,7 +159,7 @@ class IntroScreenState extends State<IntroScreen> {
             height: 5,
           ),
           Padding(
-            padding: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(20),
             child: Button(
               color: bcLineColor_c1,
               label: 'JÁ SOU PARCEIRO',

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_intro3/page/questionario/questionario_list.dart';
+import 'package:flutter_application_intro3/widget/appbar_credencial.dart';
 import 'package:flutter_application_intro3/widget/button_d.dart';
 import 'package:get/get.dart';
 
@@ -12,10 +13,7 @@ class QuestionarioPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(
-          title: const Text('Questionario'),
-          leading: const Icon(Icons.arrow_circle_left_outlined),
-        ),
+        appBar: const AppBarCredencial(title: 'Questionario'),
         body: SizedBox(
           width: double.infinity,
           height: double.infinity,
@@ -31,7 +29,8 @@ class QuestionarioPage extends StatelessWidget {
                         color: const Color.fromARGB(255, 70, 67, 67))),
               ),
               const Expanded(child: QuestionarioList()),
-              const ButtonPage(textButton: 'Continuar'),
+              const ButtonPage(
+                  textButton: 'Continuar', caminho: '/dadosempresa'),
             ],
           ),
         ),

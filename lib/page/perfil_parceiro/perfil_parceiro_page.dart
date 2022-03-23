@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_intro3/theme/colors.dart';
+import 'package:flutter_application_intro3/widget/appbar_credencial.dart';
 import 'package:flutter_application_intro3/widget/btn_corfonte.dart';
 import 'package:get/get.dart';
 
@@ -10,15 +11,9 @@ class ParceiroPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const title = 'Perfil do Parceiro';
-
     return MaterialApp(
-      title: title,
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text(title),
-          leading: const Icon(Icons.arrow_circle_left_outlined),
-        ),
+        appBar: const AppBarCredencial(title: 'Perfil Parceiro'),
         body: ListView(children: [
           const SizedBox(
             height: 15,
@@ -174,7 +169,8 @@ class ParceiroPage extends StatelessWidget {
                   color: bcPrimaryColor,
                   label: 'Continuar',
                   onPressed: () {
-                    Get.toNamed('/docautonomo');
+                    // Get.toNamed('/docautonomo');
+                    Get.toNamed('/cnhVerso');
                   },
                 ),
               ),

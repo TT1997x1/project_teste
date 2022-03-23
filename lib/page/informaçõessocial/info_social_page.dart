@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_intro3/widget/appbar_credencial.dart';
 import 'package:flutter_application_intro3/widget/button_d.dart';
 import 'package:flutter_application_intro3/widget/textfield.dart';
 import 'package:flutter_application_intro3/widget/textstittle.dart';
@@ -11,10 +12,7 @@ class InfosocialPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-      appBar: AppBar(
-        title: const Text('Informações sociais'),
-        leading: const Icon(Icons.arrow_circle_left_outlined),
-      ),
+      appBar: const AppBarCredencial(title: 'Informações Sociais'),
       body: SizedBox(
         width: double.infinity,
         height: double.infinity,

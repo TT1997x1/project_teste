@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_intro3/share/svg.dart';
+import 'package:flutter_application_intro3/widget/appbar_credencial.dart';
 import 'package:flutter_application_intro3/widget/button_d.dart';
 import 'package:get/get.dart';
 
@@ -12,10 +13,7 @@ class DocumentosCnpjPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(
-          title: const Text('Documentos'),
-          leading: const Icon(Icons.arrow_circle_left_outlined),
-        ),
+        appBar: const AppBarCredencial(title: 'Documentos'),
         body: SizedBox(
           width: double.infinity,
           height: double.infinity,

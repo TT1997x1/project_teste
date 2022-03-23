@@ -76,3 +76,43 @@ class Button2 extends StatelessWidget {
     );
   }
 }
+
+class Button3 extends StatelessWidget {
+  final VoidCallback? onPressed;
+  final String label;
+  final double? width;
+  final double height;
+  final Color? color;
+  final Color? colorText;
+
+  const Button3({
+    Key? key,
+    required this.label,
+    required this.onPressed,
+    this.width = 150,
+    this.height = 40,
+    this.color,
+    this.colorText,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: ElevatedButton(
+        onPressed: onPressed,
+        child: Text(
+          label,
+          style: const TextStyle(
+              fontSize: 11,
+              fontWeight: FontWeight.bold,
+              color: Color.fromARGB(255, 20, 20, 20)),
+        ),
+        style: ElevatedButton.styleFrom(
+            shape: const StadiumBorder(),
+            primary: Color.fromARGB(255, 249, 252, 249)),
+      ),
+    );
+  }
+}

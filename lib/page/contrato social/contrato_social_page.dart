@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_intro3/share/svg.dart';
+import 'package:flutter_application_intro3/widget/appbar_credencial.dart';
 import 'package:flutter_application_intro3/widget/button_d.dart';
 import 'package:get/get.dart';
 
@@ -12,10 +13,7 @@ class ContratoSocialPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(
-          title: const Text('Contrato social'),
-          leading: const Icon(Icons.arrow_circle_left_outlined),
-        ),
+        appBar: const AppBarCredencial(title: 'Contrato Social'),
         body: SizedBox(
           width: double.infinity,
           height: double.infinity,
@@ -40,7 +38,7 @@ class ContratoSocialPage extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        svgInformativo,
+                        contratoSocial,
                       ],
                     ),
                   ),

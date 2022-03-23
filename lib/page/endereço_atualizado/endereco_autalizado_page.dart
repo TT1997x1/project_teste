@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_intro3/share/svg.dart';
+import 'package:flutter_application_intro3/widget/appbar_credencial.dart';
 import 'package:flutter_application_intro3/widget/button_d.dart';
 import 'package:flutter_application_intro3/widget/textstittle.dart';
 import 'package:get/get.dart';
@@ -13,10 +14,7 @@ class EnderecoPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(
-          title: const Text('Endereço atualizado'),
-          leading: const Icon(Icons.arrow_circle_left_outlined),
-        ),
+        appBar: const AppBarCredencial(title: 'Endereço Atualizado'),
         body: SizedBox(
           width: double.infinity,
           height: double.infinity,
@@ -40,7 +38,7 @@ class EnderecoPage extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      svgInformativo,
+                      svEndereco,
                     ],
                   ),
                 ),
@@ -48,7 +46,7 @@ class EnderecoPage extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
-              const TextTittle2(
+              const TextTittle(
                   textTittle: 'Conta de água, luz ou telefone',
                   textColor: Color.fromARGB(255, 75, 75, 75)),
               const TextTittle(textTittle: 'máximo 3 meses'),
@@ -56,7 +54,8 @@ class EnderecoPage extends StatelessWidget {
                 height: 50,
               ),
             ]),
-            const ButtonPage(textButton: 'OK, Continuar'),
+            const ButtonPage(
+                textButton: 'OK, Continuar', caminho: '/concluido'),
           ]),
         ),
       ),
