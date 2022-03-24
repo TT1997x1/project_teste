@@ -169,8 +169,9 @@ class ParceiroPage extends StatelessWidget {
                   color: bcPrimaryColor,
                   label: 'Continuar',
                   onPressed: () {
-                    // Get.toNamed('/docautonomo');
-                    Get.toNamed('/cnhVerso');
+                    //Get.toNamed('/representantes');
+                    //Get.toNamed('/cnhVerso');
+                    Get.toNamed('/contcadb');
                   },
                 ),
               ),

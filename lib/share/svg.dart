@@ -85,3 +85,23 @@ final Widget cnhFrentre =
 
 final Widget cnhVerso =
     SvgPicture.asset('assets/images/doc_cnh_verso.svg', width: 300);
+
+final Widget doCart = SvgPicture.asset(
+  'assets/images/icon_doc_cartao.svg',
+  width: 25,
+);
+
+final Widget doEmail = SvgPicture.asset(
+  'assets/images/icon_doc_email.svg',
+  width: 25,
+);
+
+final Widget doRgcpf = SvgPicture.asset(
+  'assets/images/icon_doc_rgcpf.svg',
+  width: 25,
+);
+
+final Widget adicionar = SvgPicture.asset(
+  'assets/images/btn_adicionar.svg',
+  width: 25,
+);

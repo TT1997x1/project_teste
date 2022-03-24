@@ -52,6 +52,7 @@ class CadRpresentantePage extends StatelessWidget {
               ),
             ]),
             const ButtonPage(textButton: 'Concluir', caminho: '/representante'),
+            const ButtonOutline(textButton: 'Excluir'),
           ]),
         ),
       ),

@@ -14,3 +14,5 @@ const bcTextColor_c3 = Color.fromARGB(255, 75, 75, 75);
 const bcLineColor_c1 = Color.fromARGB(255, 210, 210, 210);
 const bcLineColor_c2 = Color.fromARGB(255, 240, 240, 240);
 const bcBaseColor = Color.fromARGB(255, 255, 255, 255);
+
+double bcDefaultPadding = 20.0;

@@ -10,6 +10,7 @@ import 'package:flutter_application_intro3/routes/con_email_route.dart';
 import 'package:flutter_application_intro3/routes/con_emailt_route.dart';
 import 'package:flutter_application_intro3/routes/concluido_route.dart';
 import 'package:flutter_application_intro3/routes/conf_emailD_route.dart';
+import 'package:flutter_application_intro3/routes/conta_banc_cad_route.dart';
 import 'package:flutter_application_intro3/routes/contrato_social_route.dart';
 import 'package:flutter_application_intro3/routes/dados_emp_route.dart';
 import 'package:flutter_application_intro3/routes/doc_frente_route.dart';
@@ -72,7 +73,8 @@ class MyApp extends StatelessWidget {
         ...CnhVersoRouters.routers,
         ...DocFrenteRouters.routers,
         ...CarteiraProfRouters.routers,
-        ...CarProfVersoRouters.routers
+        ...CarProfVersoRouters.routers,
+        ...ContBanCadRouters.routers
       ],
       debugShowCheckedModeBanner: false,
     );
